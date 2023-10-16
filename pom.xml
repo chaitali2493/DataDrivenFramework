@@ -2,6 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Datadriven_naveen</groupId>
   <artifactId>Datadriven_Naveen</artifactId>
+  <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   
    <dependencies>
@@ -13,8 +14,6 @@
     <version>3.141.59</version>
 </dependency>
  
-
-  
   
   <dependency>
                  <groupId>org.apache.poi</groupId>
@@ -63,5 +62,18 @@
 </dependency>
  
   </dependencies>
+  
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.0.0</version>
+            <configuration>
+                <attachClasses>true</attachClasses>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
   
 </project>
