@@ -1,3 +1,4 @@
+package Test;
 import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
@@ -10,7 +11,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import util.TestUtil;
-import util.TestUtil;
+
 public class SwagLab {
 	WebDriver driver;
 	
