@@ -20,9 +20,20 @@ public class SwagLab {
 	{		
 	System.setProperty("webdriver.chrome.driver", "D://setup//chrome_driver//chromedriver//chromedriver.exe");
 	driver =new ChromeDriver();
-	driver.get("https://www.saucedemo.com/v1/");				
+	driver.get("https://www.saucedemo.com/v1/");	
+	
 	}
 
+	//@Test(dataProvider="LoginData")
+	//public void LoginTest(String Username, String Password)
+	@Test
+	public void LoginTest()
+	{
+		driver.findElement(By.id("user-name")).sendKeys("standard_user");
+		driver.findElement(By.id("password")).sendKeys("secret_sauce");
+		driver.findElement(By.id("login-button")).click();
+	}
+	/*
 	@DataProvider
 	public Object[][] LoginData() 
 	{
@@ -30,17 +41,8 @@ public class SwagLab {
 		System.out.println("Username_o"+data);
 		return data;
 	}
+	*/
 	
-	
-	@Test(dataProvider="LoginData")
-	public void LoginTest(String Username, String Password)
-	{
-	System.out.println(Username);
-	System.out.println(Password);
-		driver.findElement(By.id("user-name")).sendKeys(Username);
-		driver.findElement(By.id("password")).sendKeys(Password);
-		driver.findElement(By.id("login-button")).click();
-	}
 	/*
 	
 	@AfterTest

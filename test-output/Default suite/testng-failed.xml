@@ -3,12 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="SwagLab">
+      <class name="Test.SwagLab">
         <methods>
-          <include name="LoginTest" invocation-numbers="0 1 2 3"/>
           <include name="setup"/>
+          <include name="LoginTest"/>
         </methods>
-      </class> <!-- SwagLab -->
+      </class> <!-- Test.SwagLab -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

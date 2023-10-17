@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Suite]">
-  <test parallel="none" name="Test(failed)">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
       <class name="Test.SwagLab">
         <methods>
           <include name="setup"/>
-          <include name="LoginTest" invocation-numbers="0 1 2 3"/>
+          <include name="LoginTest"/>
         </methods>
       </class> <!-- Test.SwagLab -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
